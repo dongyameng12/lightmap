@@ -1,0 +1,66 @@
+html,
+body {
+  background-color: #b7ea9d;
+  height: 100%;
+  /* 遮罩层 */
+}
+html .map,
+body .map {
+  position: relative;
+  left: 0;
+  right: 0;
+  margin: auto;
+  text-align: center;
+  width: 7.16rem;
+  height: 5.95rem;
+}
+html .map > img,
+body .map > img {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 7.16rem;
+  height: 5.95rem;
+}
+html .map > div:nth-child(2) > div,
+body .map > div:nth-child(2) > div {
+  display: none;
+  left: 5.3rem;
+  top: 3.3rem;
+  background: url(../images/star.png) no-repeat;
+  width: .5rem;
+  height: .5rem;
+  background-size: contain;
+  position: absolute;
+  z-index: 100;
+  background-size: cover;
+}
+html .map > div:nth-child(3) > div,
+body .map > div:nth-child(3) > div {
+  display: none;
+  left: 1.2rem;
+  top: 1.6rem;
+  background: url(../images/star.png) no-repeat;
+  width: .5rem;
+  height: .5rem;
+  background-size: contain;
+  position: absolute;
+  z-index: 100;
+  background-size: cover;
+}
+html section.mask,
+body section.mask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 100;
+}
+html .map a:hover,
+body .map a:hover {
+  color: #fff;
+}
+select#province1 {
+  cursor: default;
+}

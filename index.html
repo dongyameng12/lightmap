@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>北京移动</title>
+    <link rel="stylesheet" href="css/reset.min.css">
+    <link rel="stylesheet/less" href="css/styles.less">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- <script src="js/less-1.7.0.min.js"></script> -->
+    <script src="js/jquery-1.10.1.min.js"></script>
+</head>
+<body>
+    <script src="js/distpicker.data.js"></script>
+    <script src="js/distpicker.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/index.js"></script>
+    
+    <!-- 省份选择框 -->
+    <div class="container">
+		<form class="form-inline">
+			<div data-toggle="distpicker">
+                <div class="form-group">
+                    <label class="" for="province1"></label>
+                    <select class="form-control" id="province1"></select>
+                </div>
+			</div>
+		</form>
+	</div>
+    <div class="map">
+        <img src="images/map.jpg" usemap="#Map" border="0">
+        <!-- 安徽省 -->
+        <div class="city"><div class="citybg" data="安徽省"></div></div>
+        <!-- 新疆维吾尔族 -->
+        <div class="city"><div class="citybg" data="新疆维吾尔自治区"></div></div>
+    </div>
+               
+    <!-- 遮罩层 -->
+    <section class="mask" id="mask"></section>
+</body>
+</html>
